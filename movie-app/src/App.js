@@ -19,6 +19,16 @@ function App() {
       rating: 4
     }
   ]);
+  const movies = [
+    {
+        id: 1,
+        title: "Inception",
+        description: "A mind-bending thriller by Christopher Nolan.",
+        trailerLink: "https://www.youtube.com/embed/8hP9D6kZseM",
+    },
+    // Add more movies as needed
+];
+
   const [filter, setFilter] = useState({ title: '', rating: '' });
 
   const filterTitle = (title) => {
@@ -52,6 +62,7 @@ function App() {
       </button>
     </div>
   );
+  
 }
 
 export default App;
